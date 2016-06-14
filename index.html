@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>GuteFrage.net BibTex Exporter</title>
+  <meta name="description" content="Simple web interface in order to retrieve BibTex entries from GuteFrage.net questions...">
+  <meta name="author" content="BobMcFry">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="bower_components/skeleton/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/skeleton/css/skeleton.css">
+  <link rel="stylesheet" href="css/own.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Visit: http://realfavicongenerator.net/ -->
+  <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+
+</head>
+<body onload="initialize();">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <h1 class="centerized">Zitiere das was wirklich zählt.</h1>
+    <div class="row">
+      <div class="three columns">
+        <p></p>
+      </div>
+      <div class="six columns">
+        <input id="gutefrage-url" class="u-full-width" placeholder="URL zu einer guten Frage" type="url">
+      </div>
+      <div class="two columns">
+        <button id="convert">Button element</button>
+      </div>
+      <div class="one columns">
+        <p></p>
+      </div>
+    </div>
+
+    <div>
+      <p id="result"></p>
+    </div>
+  </div>
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"> </script>
+<script type="text/javascript" src="mechanics.js"> </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
