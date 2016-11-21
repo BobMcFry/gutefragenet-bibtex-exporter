@@ -134,6 +134,12 @@ function initialize() {
     
     // set listener to button or textfield that extracts site
     $( "#convert" ).on( "click", buttonListener);
+    $('#gutefrage-url').keypress(function(e){
+      if(e.which == 13){
+          $('#convert').click();
+      }
+    });
+
 
 }
 
