@@ -80,17 +80,17 @@ function extractBibTex ( results ) {
     
     // create string representation of bibtex
     // korrigiere bobtex
-    string = "@article{"       + author + timeParts[2] +   "<br>";
+    string = "@article{"       + author + timeParts[2] +   ",<br>";
     string += "    title={"        + title                 + "},<br>";
     string += "    author={"       + author                + "},<br>";
     string += "    year={"         + timeParts[2]          + "},<br>";
-    string += "    howpublished={" + guteFrageURL          + "},<br>";
+    string += "    howpublished={\\url{" + guteFrageURL          + "}},<br>";
     if (tags.length > 0){
         string += "    journal={Abhandlungen zu ";
         for ( var i = 0; i < tags.length-1; i++ ) {
             string +=            tags[i]               + ", ";
         };
-        string +=                tags[tags.length-1]   + "}<br>";
+        string +=                tags[tags.length-1]   + "},<br>";
     }
     // leave comma here (never forget that !)
     string += "    publisher={gutefrage.net}<br>";
