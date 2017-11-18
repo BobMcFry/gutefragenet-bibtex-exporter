@@ -1,3 +1,6 @@
+***
+*NOTE*: Unfortunately (and surprisingly late) my shitty application stopped working. Deepest sorries out to all scientists who now have to cite `gutefrage.net` by hand.
+***
 # gutefragenet-bibtex-exporter
 The missing BibTex exporter for gutefrage.net
 
